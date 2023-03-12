@@ -1,7 +1,7 @@
 from flask import Blueprint
 from . import db
 
-login = Blueprint('auth', __name__)
+login = Blueprint('login', __name__)
 
 
 @login.route('/login')
