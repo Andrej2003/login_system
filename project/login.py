@@ -1,19 +1,19 @@
 from flask import Blueprint
 from . import db
 
-login = Blueprint('login', __name__)
+log_in = Blueprint('login', __name__)
 
 
-@login.route('/login')
+@log_in.route('/login')
 def login():
     return 'Login'
 
 
-@login.route('/signup')
+@log_in.route('/signup')
 def signup():
     return 'Signup'
 
 
-@login.route('/logout')
+@log_in.route('/logout')
 def logout():
     return 'Logout'

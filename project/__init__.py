@@ -11,7 +11,7 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
 
     db.init_app(app)
-    from .login import login as login_blueprint
+    from .login import log_in as login_blueprint
     app.register_blueprint(login_blueprint)
 
     # blueprint for non-auth parts of app
