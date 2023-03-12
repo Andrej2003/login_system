@@ -11,6 +11,12 @@ def login():
     return render_template("login.html")
 
 
+@log_in.route('/login', methods=['POST'])
+def login_post():
+    # login code goes here
+    return redirect(url_for('main.profile'))
+
+
 @log_in.route('/signup')
 def signup():
     return render_template("signup.html")
